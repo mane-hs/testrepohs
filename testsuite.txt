@@ -1,0 +1,102 @@
+Test Suite - QA Test
+
+//Positive test Scenarios for adding nodes
+--Test Case 1 - Add a node
+Description: This test case is to check whether a Node is added when clicking on the "Add Node" button.
+Steps: 1. Navigate to URL: 
+       2. Click Add Node button.
+Expected result: Node1 should be added in the center of the canvas, with random color ('blue', 'red', 'green', 'yellow', 'gray', 'purple')
+
+
+--Test Case 2 - Add multiple nodes
+Description:Verify that every next click creates a new node with increasing +1 number (Node(n++)). 
+
+
+--Test Case 3 - Expand a node
+Description: Verify that when double clicking on a node a new node is created with a number((latest node num)+1), which is 
+linked with with a parent node by an arrow (Link(n++)).
+
+//Positive Test Scenarios for the Vector arrows
+--Test Case 4 - Navigate to canter
+Description: Click the center button on the vector arrows the canvas should be centralized.
+
+
+--Test Case 5 - Navigation - to the left
+Description: Keep clicking on the right vector the canvas moves to left (?).
+
+
+--Test Case 6 - Navigation - to the right
+Description: Keep clicking on the left vector the canvas moves to right (?).
+
+
+--Test Case 7 - Navigation - up
+Description: Keep clicking on the vector down the canvas moves to the top (?).
+
+
+--Test Case 8 - Navigation - down
+Description: Keep clicking on the vector up the canvas moves to the bottom (?).
+
+
+//Positive Test Scenarios for the Zoom in - Zoom out
+--Test Case 9 - Zoom out
+Description: Click on the "-" icon of the scale -> the size of the created group of nodes, 
+the size of each node cicle, and the length of Link arrows should be decreased.
+
+--Test Case 10 - Zoom in
+Description: Click on the "+" icon of the scale -> the size of the created group of nodes,
+the size of each node cicle, and the length of Link arrows should be increased.
+
+--Test Case 11 - Pick the scale pointer and move it up
+Description: Hold the scale pointer and move it up -> the size of the created group of nodes,
+the size of each node cicle, and the length of Link arrows should be increased.
+
+--Test Case 12 - Pick the scale pointer and move it down
+Description: Hold the scale pointer and move it down -> the size of the created group of nodes,
+the size of each node cicle, and the length of Link arrows should be dencreased.
+
+//Positive Test Scenarios for the Pointer/Cursor
+--Test Case 13: Arrow Pointer icon
+Description: Arrow Pointer icon under the vectors -> selector is activated, click on the canvas and move
+it to a desired direction to select a canvas area.
+Expected result: If there are nodes/links located on the selected area, the massive of selected node names, 
+and link names(if any) appears at the bottom of the page.
+Selected:
+Nodes: Selected array of nodes
+Links: Selected array of links
+
+--Test Case 14: Hand pointer icon
+Description: Click on the arrow pointer under the vectors it changes to hand pointer. In that state it is 
+possible to select a single node: at the bottom of the text appears the info of the selected node:
+Selected: 
+Nodes: Node(n)
+Links:
+
+--Test Case 15: Clicking on a link with hand pointer
+Description: Click on a a single link arrow, the info of the link appears:
+Selected;
+Nodes:
+Links: Link(n)
+
+--Test Case 16: Moving the canvas with hand pointer
+Description: When the hand pointer is active click and move the canvas to the desired direction.
+
+
+//Positive Test Scenarios for Context Menu
+
+--Test Case 17: Context Menu
+Description: right click on a single node -> context menu dropdown appears
+
+--Test Case 18: Context menu items
+Description: click on context menu 1 - browser alert should appear: "You clicked on  contextmenu 1". Click OK.
+            click on context menu 2 - browser alert should appear: "You clicked on  contextmenu 2". Click OK.
+            click on context menu 3 - browser alert should appear: "You clicked on  contextmenu 3". Click OK.
+
+--Test Case 19: Refresh the page
+Description: Refresh the page: page is reuploaded, all created data erased.
+
+
+
+
+
+
+
