@@ -1,0 +1,32 @@
+Issue report 1: Vector arrows’ navigation
+
+OS - Windows, Mac, Chrome Browser
+
+Description: The vectors move the canvas in opposite directions.
+
+Steps to reproduce: 1.Navigate to http://104.248.248.105:8085/
+                                 2. Click on Add Node button to add nodes on the canvas.
+                                 3. Click on right arrow.
+                                 4. Click on left arrow.
+                                 5. Click on arrow up.
+                                 6. Click on arrow down.
+Expected result: when clicking on up user expects to move the canvas up, right arrow to right.
+Actual result: when clicking on the left arrow the canvas moves to right. 
+ (Is this an expected behavior?)
+
+
+Issue report 2: Nodes are rearranged over each other
+
+OS - Windows, Mac, Chrome Browser
+
+Description: When adding a list of nodes then clicking one to expand not, rearranged nodes are placed over each other, 
+             which makes some of them invisible, and random parameters of a massive of nodes can be the same.
+
+Steps to reproduce: 1. Navigate to http://104.248.248.105:8085/
+                                 2. Click on Add Node (~20) button to add nodes on the canvas.
+                                 3. Double click on a single node to expand it.
+Expected result: When the node is expanded a new node is created which is linked to the parent node with an arrow.
+Actual result: all nodes are rearranged, some are placed over one another or the links become invisible 
+               (please see the screenshots attached: Capture1.png, Capture2.png).
+
+
